@@ -1,6 +1,4 @@
 package by.it.lozouski.lesson02;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
@@ -26,7 +24,6 @@ class TaskC2 {
         convert(xDec,yDec,16);
         convert(xDec,yDec,8);
     }
-
     private static void convert(int x, int y, int s) {
         int sum = x + y;
         switch (s){
