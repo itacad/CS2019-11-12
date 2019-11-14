@@ -3,12 +3,12 @@ package by.it._tasks_.lesson01;
 public class MyTaskC {
     public static void main(String[] args) {
         for (byte i = 0;  i != -1; i++) {
-            String binary = Integer.toBinaryString(i);
 
+            String binary = Integer.toBinaryString(i);
             if (binary.length() > 8) binary = binary.substring(binary.length() - 8);
             binary = String.format("%8s", binary).replace(" ", "0");
-            String octal = Integer.toOctalString(i);
 
+            String octal = Integer.toOctalString(i);
             if (octal.length() > 8) octal = octal.substring(octal.length() - 8);
             octal = String.format("%8s", octal).replace(" ", "0");
 
