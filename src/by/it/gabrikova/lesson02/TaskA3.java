@@ -13,3 +13,5 @@ class TaskA3 {
         System.out.println(i + "*" + i + "+" + j + "*" + j + "=" + k);
     }
 }
+
+
