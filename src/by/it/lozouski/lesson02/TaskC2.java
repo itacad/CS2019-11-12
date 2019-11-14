@@ -24,6 +24,7 @@ class TaskC2 {
         convert(xDec,yDec,16);
         convert(xDec,yDec,8);
     }
+
     private static void convert(int x, int y, int s) {
         int sum = x + y;
         switch (s){
