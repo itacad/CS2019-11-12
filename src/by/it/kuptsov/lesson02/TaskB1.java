@@ -19,5 +19,15 @@ int i=sc.nextInt();
 
  */
 
+import java.util.Scanner;
+
 class TaskB1 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите целое число:");
+        int number = scanner.nextInt();
+        System.out.println ("Вы ввели число " + number);
+        int number2 = number * number;
+        System.out.println ("Ваше число в квадрате будет " + number2);
+    }
 }
