@@ -22,10 +22,10 @@ class TaskC2 {
         int e = O.nextInt();
         int r =  q + e;
         System.out.println("DEC:" + q + "+" + e + "=" +r);
-        System.out.println("Bin:" + Integer.toBinaryString(q) + "+" + Integer.toBinaryString(e) + "="
+        System.out.println("BIN:" + Integer.toBinaryString(q) + "+" + Integer.toBinaryString(e) + "="
         + Integer.toBinaryString(r));
-        System.out.println("Hex:" + Integer.toHexString(q) + "+" + Integer.toHexString(e) + "=" + Integer.toHexString(r));
-        System.out.println("Oct:" + Integer.toOctalString(q) + "+" + Integer.toOctalString(e) + "=" + Integer.toOctalString(r));
+        System.out.println("HEX:" + Integer.toHexString(q) + "+" + Integer.toHexString(e) + "=" + Integer.toHexString(r));
+        System.out.println("OCT:" + Integer.toOctalString(q) + "+" + Integer.toOctalString(e) + "=" + Integer.toOctalString(r));
     }
 }
 
