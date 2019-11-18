@@ -1,7 +1,5 @@
 package by.it.zenevich.lesson02;
 
-import java.io.PrintStream;
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -37,17 +35,14 @@ class TaskC3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int weight = scanner.nextInt();
- //       DecimalFormat f = new DecimalFormat("##.00");
-//        System.out.println(f.format(getWeight(weight)));
-//        String.format("%.2f", getWeight(weight)).replace(",", ".");
-        System.out.printf("%.2f%n", getWeight(weight));
+        System.out.format("%.2f", getWeight(weight));
     }
 
     private static double getWeight(int weight) {
         double y = 9.81;
         double z = 3.86;
-        double a = weight * (z / y);
-        return a;
+        double m = weight *(z / y);
+        return m;
     }
 
 }
