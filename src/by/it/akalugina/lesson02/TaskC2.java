@@ -13,7 +13,19 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OCT:42+32=74
 */
-class TaskC2 {
+import java.util.Scanner;
 
+class TaskC2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = a + b;
+        
+        System.out.println("DEC" + ":" + a + b + "="+c);
+        System.out.println("BIN" + ":" + a + b + "="+c);
+        System.out.println("HEX" + ":" + a + b + "="+c);
+        System.out.println("OCT" + ":" + a + b + "="+c);
+    }
 
 }
