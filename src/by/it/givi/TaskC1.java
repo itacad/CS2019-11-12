@@ -18,6 +18,6 @@ class TaskC1 {
         int q = O.nextInt();
         int e = O.nextInt();
         int r = q + e;
-        System.out.println( "Sum" + " " + "=" + " " + r);
+        System.out.println("Sum "+"= " +r);
     }
 }
