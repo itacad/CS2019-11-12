@@ -21,11 +21,19 @@ class TaskC2 {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = a + b;
-        
-        System.out.println("DEC" + ":" + a + b + "="+c);
-        System.out.println("BIN" + ":" + a + b + "="+c);
-        System.out.println("HEX" + ":" + a + b + "="+c);
-        System.out.println("OCT" + ":" + a + b + "="+c);
+        String abin = Integer.toBinaryString(a);
+        String ahex = Integer.toHexString(a);
+        String aoct = Integer.toOctalString(a);
+        String bbin = Integer.toBinaryString(b);
+        String bhex = Integer.toHexString(b);
+        String boct = Integer.toOctalString(b);
+        String cbin = Integer.toBinaryString(c);
+        String chex = Integer.toHexString(c);
+        String coct = Integer.toOctalString(c);
+        System.out.println("DEC" + ":" + a + "+" + b + "="+c);
+        System.out.println("BIN" + ":" + abin + "+" + bbin + "="+cbin);
+        System.out.println("HEX" + ":" + ahex + "+" + bhex + "="+chex);
+        System.out.println("OCT" + ":" + aoct + "+" + boct + "="+coct);
     }
 
 }

@@ -29,6 +29,27 @@ package by.it.akalugina.lesson02;
 
 
 */
-class TaskC3 {
 
+import java.math.RoundingMode;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+
+class TaskC3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int weight = in.nextInt();
+        getWeight(weight);
+    }
+
+    private static void getWeight(int weight) {
+        double planet = weight / 9.81;
+        double mars = planet * 3.86;
+        double marsround = Math.round(mars * 100.0) / 100.0;
+        System.out.println(marsround);
+
+    }
 }
+
