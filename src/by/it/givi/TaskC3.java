@@ -1,5 +1,7 @@
 package by.it.givi;
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -43,7 +45,7 @@ class TaskC3 {
         System.out.println(c);
     }
 }
-
+/*
 class TaskC4 {
     public static void main(String[] args) {
         System.out.println(getWeight(888));
@@ -58,5 +60,21 @@ class TaskC4 {
             return c;
         }
 }
-
 */
+class TaskC5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int weight = sc.nextInt();
+        System.out.println(getWeight(weight));
+    }
+
+    private static double getWeight(int weight) {
+        double gMars = 3.86;
+        double gEarth = 9.81;
+        double roundWeight = weight * (gMars / gEarth );
+        return new BigDecimal(roundWeight).setScale(2, RoundingMode.HALF_UP).doubleValue();
+    }
+
+}
+
+
