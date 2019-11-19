@@ -1,5 +1,7 @@
 package by.it.zenevich.lesson02;
 
+import com.sun.javafx.binding.StringFormatter;
+
 import java.util.Scanner;
 
 /*
@@ -35,7 +37,8 @@ class TaskC3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int weight = scanner.nextInt();
-        System.out.format("%.2f", getWeight(weight));
+ //        = Stringformat("%.2f", getWeight(weight));
+        System.out.println(getWeight(weight));
     }
 
     private static double getWeight(int weight) {
