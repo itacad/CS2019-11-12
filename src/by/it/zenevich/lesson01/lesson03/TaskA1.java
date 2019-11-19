@@ -1,4 +1,4 @@
-package by.it.zenevich.lesson03;
+package by.it.zenevich.lesson01.lesson03;
 
 /*
 Lesson 03. Task A1. Калькулятор.
@@ -33,7 +33,6 @@ Scanner sc=new Scanner(System.in);
 
  */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 class TaskA1 {

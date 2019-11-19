@@ -1,6 +1,4 @@
-package by.it.zenevich.lesson03;
-
-import java.util.Arrays;
+package by.it.zenevich.lesson01.lesson03;
 
 /*
 Lesson 03. Task A2. Стихотворение

@@ -1,4 +1,4 @@
-package by.it.zenevich.lesson03;
+package by.it.zenevich.lesson01.lesson03;
 /*
 Lesson 03. Task B1. Литералы.
 

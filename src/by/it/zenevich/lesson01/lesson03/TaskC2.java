@@ -1,4 +1,4 @@
-package by.it.zenevich.lesson03;
+package by.it.zenevich.lesson01.lesson03;
 /*
     Сумма цифр четырехзначного числа
 
