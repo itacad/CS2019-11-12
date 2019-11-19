@@ -23,5 +23,10 @@ Lesson 03. Task A2. Стихотворение
 class TaskA2 {
     public static void main(String[] args) {
         System.out.println("Мое любимое стихотворение:");
+        String a =  "Отговорила роща золотая";
+        String b = "Березовым, веселым языком,";
+        String c = "журавли, печально пролетая,";
+        String d = "не жалеют больше ни о ком.";
+        System.out.print(a+'\n'+b+'\n'+c+'\n'+d);
     }
 }
