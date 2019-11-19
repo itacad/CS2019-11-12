@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02;
+package by.it.akalugina.lesson02.lesson2;
 /*
 напишите программу которая выводит на экран
 Hello world!

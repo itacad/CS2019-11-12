@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02;
+package by.it.akalugina.lesson02.lesson2;
 
 /*
 напишите тело main программы которая выводит на экран 5 строк

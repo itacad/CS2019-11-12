@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02;
+package by.it.akalugina.lesson02.lesson2;
 
 /*
 Ускорение свободного падения на Земле и Марсе таково:
@@ -41,14 +41,16 @@ class TaskC3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int weight = in.nextInt();
-        getWeight(weight);
+        System.out.println(getWeight(weight));
     }
 
-    private static void getWeight(int weight) {
-        double planet = weight / 9.81;
-        double mars = planet * 3.86;
+     static double getWeight(int weight) {
+        double v = 9.81;
+        double planet = weight / v;
+        double n = 3.86;
+        double mars = planet * n;
         double marsround = Math.round(mars * 100.0) / 100.0;
-        System.out.println(marsround);
+        return marsround;
 
     }
 }

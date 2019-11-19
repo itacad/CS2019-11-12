@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02;
+package by.it.akalugina.lesson02.lesson2;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
