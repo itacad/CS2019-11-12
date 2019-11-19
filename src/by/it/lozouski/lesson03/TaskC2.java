@@ -1,4 +1,7 @@
 package by.it.lozouski.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -21,11 +24,21 @@ package by.it.lozouski.lesson03;
 */
 public class TaskC2 {
 
+    static int sumDigitsInNumber(int number) {
+        //через цикл for
+//        int sum = 0;
+//        for (; number > 0; number /= 10) {
+//            sum = sum + (number % 10);
+//        }
+//        return sum;
+//        -----------------
+        //рекурсия
+        if (number > 0) return sumDigitsInNumber(number / 10) + (number % 10);
+        return 0;
+    }
 
-
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println(sumDigitsInNumber(sc1.nextInt()));
+    }
 }
