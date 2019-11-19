@@ -46,3 +46,4 @@ class TaskC3 {
         return x;
     }
 }
+//не получилось(
