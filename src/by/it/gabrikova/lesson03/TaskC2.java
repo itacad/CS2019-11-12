@@ -1,4 +1,7 @@
 package by.it.gabrikova.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -22,10 +25,19 @@ package by.it.gabrikova.lesson03;
 public class TaskC2 {
 
 
+     static int sumDigitsInNumber(int number) {
+        int sum = number % 10;
+        if(number/10 < 10){
+            return sum + number/10;
+        }else{
+            return sum + sumDigitsInNumber(number/10);
+        }
+    }
 
 
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+    public static void main(String[] args) {
+
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
 }
