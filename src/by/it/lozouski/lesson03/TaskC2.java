@@ -25,16 +25,15 @@ import java.util.Scanner;
 public class TaskC2 {
 
     static int sumDigitsInNumber(int number) {
-        //через цикл for
+        //recursive call
+        if (number > 0) return sumDigitsInNumber(number / 10) + number % 10;
+        return 0;
+        //loop FOR :
 //        int sum = 0;
 //        for (; number > 0; number /= 10) {
 //            sum = sum + (number % 10);
 //        }
 //        return sum;
-//        -----------------
-        //рекурсия
-        if (number > 0) return sumDigitsInNumber(number / 10) + (number % 10);
-        return 0;
     }
 
     public static void main(String[] args) {
