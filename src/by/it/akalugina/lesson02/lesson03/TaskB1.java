@@ -27,9 +27,9 @@ strictfp class TaskB1 {
     public static  void main(String[] args) {
         double d = 111.111;
         byte b = 0b111;
-        double o = 0;
-        double h = 0;
-        double f = 0;
+        long o = 0111l;
+        int h = 0x111;
+        float f = 111.111f;
         System.out.println(d + b + o + h + f);
         System.out.println(d + " " + b + " " + o + " " + h + " " + f);
     }
