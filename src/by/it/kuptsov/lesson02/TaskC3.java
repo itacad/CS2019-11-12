@@ -32,18 +32,17 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
+    static double getWeight(int me) {
+        return Math.round(me / 9.81 * 3.86 * 100) / 100.0;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(getWeight(scanner.nextInt()));
-        int weight = scanner.nextInt();
-    }
-    public static double getWeight(int x) {
-        double earth = 9.81;
-        double mars = 3.86;
-        double n = mars / earth;
-        double a = x*n;
-        double c = Math.round(a);
-        return x;
+        int me = scanner.nextInt();
+        double nm = getWeight(me);
+        System.out.println(nm);
     }
 }
-//не получилось(
+
+
+
