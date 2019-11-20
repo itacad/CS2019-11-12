@@ -1,5 +1,8 @@
 package by.it.valuevich.lesson02;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -31,4 +34,27 @@ package by.it.valuevich.lesson02;
 */
 class TaskC3 {
 
+    static double getWeight(int me) {
+//        double mm = me / 9.81 * 3.86;
+//        int mm100 = (int) mm * 100;
+//        double delta = mm * 100 - mm100;
+//        if (delta < 0.5)
+//            return mm100 / 100.0;
+//        else
+//            return (mm100 + 1) / 100.0;
+        return Math.round(me / 9.81 * 3.86 * 100) / 100.0;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int me = sc.nextInt();
+        double mm = getWeight(me);
+        System.out.println(mm);
+
+
+    }
+
 }
+
+
+
