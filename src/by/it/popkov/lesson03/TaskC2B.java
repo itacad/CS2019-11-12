@@ -6,9 +6,10 @@ public class TaskC2B {
     static void sumDigitsInNumber(int number) {
         int sum = 0;
         int[] array = new int[15];
-        for (int i = 10; i >= 0; i--) {
-            array[i] = number / (int) Math.pow(10, i) - array[i + 1] * 10 - array[i + 2] * 100 - array[i + 3] * 1000;
+        for (int i = 10, j = 0; i >= 0; i--, j++) {
+            array[i] = number / (int) Math.pow(10, i) - array[i + j] * (int) Math.pow(10, j);
 
+            /* Надо приобразовать действия после знака - */
         }
         for (int x : array) {
             sum = sum + x;
