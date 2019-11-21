@@ -20,10 +20,10 @@ class TaskC2 {
         Scanner O = new Scanner(System.in);
         int q = O.nextInt();
         int e = O.nextInt();
-        int r =  q + e;
-        System.out.println("DEC:" + q + "+" + e + "=" +r);
+        int r = q + e;
+        System.out.println("DEC:" + q + "+" + e + "=" + r);
         System.out.println("BIN:" + Integer.toBinaryString(q) + "+" + Integer.toBinaryString(e) + "="
-        + Integer.toBinaryString(r));
+                + Integer.toBinaryString(r));
         System.out.println("HEX:" + Integer.toHexString(q) + "+" + Integer.toHexString(e) + "=" + Integer.toHexString(r));
         System.out.println("OCT:" + Integer.toOctalString(q) + "+" + Integer.toOctalString(e) + "=" + Integer.toOctalString(r));
     }
