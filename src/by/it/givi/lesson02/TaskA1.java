@@ -1,4 +1,4 @@
-package by.it.givi;
+package by.it.givi.lesson02;
 /*
 напишите программу которая выводит на экран
 Hello world!

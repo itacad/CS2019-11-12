@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson01;
+package by.it.givi.lesson01;
 
 public class HelloWorld {
     public static void main(String[] args) {

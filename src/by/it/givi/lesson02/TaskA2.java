@@ -1,4 +1,4 @@
-package by.it.givi;
+package by.it.givi.lesson02;
 
 /*
 напишите тело main программы которая выводит на экран 5 строк
