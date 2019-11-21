@@ -33,7 +33,7 @@ Lesson 03. Task B2. Нужно написать программу, котора
 */
 class TaskB2 {
     static double dis(int a, int b, int c) {
-        return Math.pow(b,2) - (4 * a * c);
+        return Math.pow(b, 2) - (4 * a * c);
     }
 
     public static void main(String[] args) {
@@ -46,14 +46,14 @@ class TaskB2 {
             double x1, x2;
             x1 = (-b + Math.sqrt(dis)) / (2 * a);
             x2 = (-b - Math.sqrt(dis)) / (2 * a);
-            System.out.print(x1+" "+x2);
-        }if (dis<0) System.out.println("Отрицательный дискриминант");
+            System.out.print(x1 + " " + x2);
+        }
+        if (dis < 0) System.out.println("Отрицательный дискриминант");
         if (dis == 0) {
             double x;
-            x = -b / ((double)2 * a);
+            x = -b / ((double) 2 * a);
             System.out.println(x);
         }
-
 
 
     }

@@ -1,4 +1,5 @@
 package by.it.givi.lesson03;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -34,7 +35,6 @@ public class TaskC2 {
 
     }
 }
-
 
 
 //    public static void main(String[] args) {
