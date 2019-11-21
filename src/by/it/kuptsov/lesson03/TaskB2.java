@@ -30,10 +30,11 @@ Lesson 03. Task B2. Нужно написать программу, котора
 
 */
 class TaskB2 {
+//    public static void main(String[] args){
+//        static double dis(int a, int b, int c);
+    }
 
-}
+//}
 
 //соблюдать приоритет операции
-
-//static double dis(int a, int b, int c)
-    //return b*b
+//return b*b
