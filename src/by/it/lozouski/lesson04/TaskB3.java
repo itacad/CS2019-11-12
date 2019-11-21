@@ -25,7 +25,18 @@ package by.it.lozouski.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        int x = sc1.nextInt();
+        int i = 0, sum = 0;
+        while (sum < x) {
+            i++;
+            sum += i;
+            if (sum > x) break;
+            System.out.print(sum + ",");
+        }
+    }
 }

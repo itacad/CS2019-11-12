@@ -31,14 +31,14 @@ public class TaskA3 {
         int y = sc1.nextInt();
         int z = sc1.nextInt();
         if (x == y && y == z) {
-            System.out.println();
+            System.out.println(x+" "+y+" "+z);
         }
          else if (x == z) {
-            System.out.println();
+            System.out.println(x+" "+z);
         } else if (y == z) {
-            System.out.println();
+            System.out.println(y+" "+z);
         } else if (x == y) {
-            System.out.println();
+            System.out.println(x+" "+y);
         }
     }
 }

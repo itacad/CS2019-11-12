@@ -50,7 +50,7 @@ public class TaskA2 {
                 System.out.println("суббота");
                 break;
             case 7:
-                System.out.println("воскресение");
+                System.out.println("воскресенье");
                 break;
             default:
                 System.out.println("такого дня недели не существует");
