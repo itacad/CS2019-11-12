@@ -28,15 +28,19 @@ import java.util.Scanner;
  */
 public class TaskA1 {
     public static void main(String[] args) {
-        int x;
-        for (x = 0; x < 10; x++) {
-            if (x == 3) ;
-            System.out.println("Я  программирование.");
+        for (int i = 1; i < 11; i++) {
+            if (i != 3 && i != 9) {
+                System.out.println("Я изучаю программирование.");
+            } else {
+                System.out.println("Меня интересует высокая зарплата!");
+            }
         }
-
-
     }
 }
+
+
+
+
 
 
 
