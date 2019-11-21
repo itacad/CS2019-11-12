@@ -51,8 +51,6 @@ class TaskC4 {
         System.out.println(getWeight(888));
     }
         public static double getWeight(int earthWeight) {
-            Scanner scanner = new Scanner(System.in);
-            int i = scanner.nextInt();
             double e = 9.81;
             double m = 3.86;
             double d = i * m / e;
@@ -61,7 +59,7 @@ class TaskC4 {
         }
 }
 */
-class TaskC5 {
+class TaskC3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int weight = sc.nextInt();
