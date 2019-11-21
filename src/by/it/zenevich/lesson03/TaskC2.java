@@ -22,12 +22,17 @@ package by.it.zenevich.lesson03;
 */
 public class TaskC2 {
     public static int sumDigitsInNumber(int n) {
-        int s = 0;
-        while (n > 0) {
-            s += n % 10;
-            n /= 10;
+        //     int s = 0;
+        //     while (n > 0) {
+        //         s += n % 10;
+        //         n /= 10;
+        //     }
+        //     return s;
+        if (n < 10) {
+            return n;
+        } else {
+            return n % 10 + sumDigitsInNumber(n / 10);
         }
-        return s;
     }
 
 
