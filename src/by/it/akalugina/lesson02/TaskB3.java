@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson2;
+package by.it.akalugina.lesson02;
 /*
         Уберите комментарии с части кода, чтобы на экран вывелось сообщение «C Новым Годом».
 

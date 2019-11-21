@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson2;
+package by.it.akalugina.lesson02;
 /*
 Измените переменные и строку вывода в программе так,
 чтобы она рассчитывала и печатала следующее выражение

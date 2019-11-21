@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson03;
+package by.it.akalugina.lesson03;
 /*
 Lesson 03. Task B1. Литералы.
 

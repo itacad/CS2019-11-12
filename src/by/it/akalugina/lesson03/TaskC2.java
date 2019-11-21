@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson03;
+package by.it.akalugina.lesson03;
 /*
     Сумма цифр четырехзначного числа
 

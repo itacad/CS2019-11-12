@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson2;
+package by.it.akalugina.lesson03;
 
 import org.junit.Test;
 
@@ -8,71 +8,70 @@ import java.lang.reflect.Modifier;
 
 import static org.junit.Assert.*;
 
-@SuppressWarnings("all")
+@SuppressWarnings("all") //море warnings. всех прячем.
 
 //поставьте курсор на следующую строку и нажмите Ctrl+Shift+F10
-public class Testing02 {
+public class Testing03 {
 
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskA1() throws Exception {
-        run("").include("Hello world!");
+        run("7 2").include("9 5 14 3 1\n9.0 5.0 14.0 3.5 1.0");
     }
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskA2() throws Exception {
-        run("").include(
-                "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n" +
-                        "Я начинаю изучать Java!\n"
-        );
+        Testing03 testing = run("");
+        String[] lines = testing.strOut.toString().trim().split("\\n");
+        if (lines.length < 5)
+            fail("Недостаточно строк");
+        if (!lines[0].trim().equalsIgnoreCase("Мое любимое стихотворение:") &&
+                !lines[0].trim().equalsIgnoreCase("Моё любимое стихотворение:"))
+            fail("Нет заголовка: Мое любимое стихотворение:");
+        String old = "old";
+        for (String s : lines) {
+            if (s.length() < 10 && s.length() > 1)
+                fail("Слишком короткие строки");
+            if (old.equals(s))
+                fail("Есть одинаковые строки");
+            old = s;
+        }
     }
 
-    @Test(timeout = 1500)
-    public void testTaskA3() throws Exception {
-        run("").include("3*3+4*4=25");
-    }
-
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskB1() throws Exception {
-        run("7").include("49");
+        run("").include("575.222")
+                .include("111.111 ")
+                .include("7 73 273 ")
+                .include("111.111");
     }
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskB2() throws Exception {
-        run("").include("20");
+        run("2 5 3").include("-1.0").include("-1.5");
+        run("2 4 2").include("-1.0\n");
+        run("2 2 2").include("Отрицательный дискриминант");
     }
 
-    @Test(timeout = 1500)
-    public void testTaskB3() throws Exception {
-        run("").include("C Новым Годом");
-    }
-
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskC1() throws Exception {
-        run("7\n3\n").include("Sum = 10\n");
+        Testing03 testing = run("");
+        Method m = checkMethod(testing.aClass.getSimpleName(), "convertCelsiumToFahrenheit", int.class);
+        assertEquals(104.0, (double) m.invoke(null, 40), 1e-22);
+        assertEquals(68.0, (double) m.invoke(null, 20), 1e-22);
+        assertEquals(32.0, (double) m.invoke(null, 0), 1e-22);
     }
 
-    @Test(timeout = 1500)
+    @Test(timeout = 2500)
     public void testTaskC2() throws Exception {
-        run("34\n26\n").include(
-                "DEC:34+26=60\n" +
-                        "BIN:100010+11010=111100\n" +
-                        "HEX:22+1a=3c\n" +
-                        "OCT:42+32=74\n");
+        Testing03 testing = run("");
+        Method m = checkMethod(testing.aClass.getSimpleName(), "sumDigitsInNumber", int.class);
+        assertEquals((int) m.invoke(null, 5467), 22);
+        assertEquals((int) m.invoke(null, 5555), 20);
+        assertEquals((int) m.invoke(null, 1111), 4);
+        assertEquals((int) m.invoke(null, 9993), 30);
     }
 
-    @Test(timeout = 1500)
-
-    public void testTaskC3() throws Exception {
-        run("75\n").include("29.51\n");
-        Testing02 t = run("100\n").include("39.35\n");
-        Method m = checkMethod(t.aClass.getSimpleName(), "getWeight", int.class);
-        assertEquals((Double) m.invoke(null, 100), 39.35, 1e-100);
-        assertEquals((Double) m.invoke(null, 75), 29.51, 1e-100);
-    }
 
     /*
 ===========================================================================================================
@@ -139,11 +138,11 @@ public class Testing02 {
 
     //метод находит и создает класс для тестирования
     //по имени вызывающего его метода, testTaskA1 будет работать с TaskA1
-    private static Testing02 run(String in) {
+    private static Testing03 run(String in) {
         return run(in, true);
     }
 
-    private static Testing02 run(String in, boolean runMain) {
+    private static Testing03 run(String in, boolean runMain) {
         Throwable t = new Throwable();
         StackTraceElement trace[] = t.getStackTrace();
         StackTraceElement element;
@@ -162,11 +161,11 @@ public class Testing02 {
         System.out.println("Старт теста для " + clName);
         if (!in.isEmpty()) System.out.println("input:" + in);
         System.out.println("---------------------------------------------");
-        return new Testing02(clName, in, runMain);
+        return new Testing03(clName, in, runMain);
     }
 
     //-------------------------------  тест ----------------------------------------------------------
-    public Testing02() {
+    public Testing03() {
         //Конструктор тестов
     }
 
@@ -178,7 +177,7 @@ public class Testing02 {
     private StringWriter strOut = new StringWriter(); //накопитель строки вывода
 
     //Основной конструктор тестов
-    private Testing02(String className, String in, boolean runMain) {
+    private Testing03(String className, String in, boolean runMain) {
         //this.className = className;
         aClass = null;
         try {
@@ -204,18 +203,18 @@ public class Testing02 {
     }
 
     //проверка вывода
-    private Testing02 is(String str) {
+    private Testing03 is(String str) {
         assertTrue("ERROR:Ожидается такой вывод:\n<---начало---->\n" + str + "<---конец--->",
                 strOut.toString().equals(str));
         return this;
     }
 
-    private Testing02 include(String str) {
+    private Testing03 include(String str) {
         assertTrue("ERROR:Строка не найдена: " + str + "\n", strOut.toString().contains(str));
         return this;
     }
 
-    private Testing02 exclude(String str) {
+    private Testing03 exclude(String str) {
         assertTrue("ERROR:Лишние данные в выводе: " + str + "\n", !strOut.toString().contains(str));
         return this;
     }

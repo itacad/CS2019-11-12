@@ -1,4 +1,4 @@
-package by.it.akalugina.lesson02.lesson2;
+package by.it.akalugina.lesson02;
 
 /*
 Ускорение свободного падения на Земле и Марсе таково:
@@ -30,10 +30,6 @@ package by.it.akalugina.lesson02.lesson2;
 
 */
 
-import java.math.RoundingMode;
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
