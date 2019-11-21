@@ -47,11 +47,11 @@ class TaskB2 {
             double secondX = (-b - Math.sqrt(d)) / (a * 2.0);
             System.out.println(firstX + " " + secondX);
         }
-        if (d == 0) {
+        else if (d == 0) {
             double x = -b / (2.0 * a);
             System.out.println(x);
         }
-        if (d < 0) {
+        else {
             System.out.println("Отрицательный дискриминант");
         }
     }
