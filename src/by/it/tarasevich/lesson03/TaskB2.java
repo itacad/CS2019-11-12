@@ -52,12 +52,12 @@ class TaskB2 {
             x2 = (-b + Math.sqrt(D)) / (2 * a);
             System.out.println(x1 + " " + x2);
         }
-        if (D == 0) {
+        else if (D == 0) {
             double x;
             x = -b / (2 * a);
             System.out.println(x);
         }
-        if (D < 0) {
+        else {
             System.out.println("Отрицательный дискриминант");
         }
 

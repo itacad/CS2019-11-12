@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson04;
+package by.it.tarasevich.lesson04;
 
 /*
 Выведите на экран в цикле 10 раз фразу
@@ -34,5 +34,4 @@ public class TaskA1 {
             }
         }
     }
-
 }
