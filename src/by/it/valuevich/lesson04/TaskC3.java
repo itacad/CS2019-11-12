@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson04;
+package by.it.valuevich.lesson04;
 
 /*
 Вывести таблицу умножения 10 x 10 (двоныйм циклом),

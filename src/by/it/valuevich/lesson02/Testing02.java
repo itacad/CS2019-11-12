@@ -120,7 +120,7 @@ public class Testing02 {
         try {
             return cl.getDeclaredMethod(name, param);
         } catch (NoSuchMethodException e) {
-            fail("\nERROR:Тест не пройден. Метод " + cl.getName() + "." + name + " не найден\n");
+            fail("\nERROR:Тест не пройден. Метод " + cl.getName() + "" + name + " не найден\n");
         }
         return null;
     }
