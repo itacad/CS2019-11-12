@@ -57,11 +57,11 @@ public class TaskC3 {
         int temp = x * y;
         String convertsum = "";
         switch (temp){
-            case 4: convertsum = "четыре"; break;
-            case 6: convertsum = "шесть"; break;
-            case 8: convertsum = "восемь"; break;
-            case 9: convertsum = "девять"; break;
-            case 10: convertsum = "десять"; break;
+            case 4: convertsum = convertNumToStr(4); break;
+            case 6: convertsum = convertNumToStr(6); break;
+            case 8: convertsum = convertNumToStr(8); break;
+            case 9: convertsum = convertNumToStr(9); break;
+            case 10: convertsum = convertNumToStr(10); break;
             case 12: convertsum = convertNumToStr(2).substring(0,2)+"енадцать"; break;
             case 14: convertsum = convertNumToStr(4).substring(0,5)+"надцать"; break;
             case 15: convertsum = convertNumToStr(5).substring(0,3)+"надцать"; break;
