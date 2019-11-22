@@ -1,5 +1,7 @@
 package by.it.lozouski.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,48 @@ package by.it.lozouski.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc1 = new Scanner(System.in);
+        int salary = sc1.nextInt();
+        int month = 0;
+        if (salary < 300 || salary > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else {
+            for (; month <= 14; month++) {
+                System.out.println(monthNumber(month)+salarycalc(month,salary));
+                if(salarycalc(month,salary) == 666){ break;}
+            }
+        }
+    }
 
+    private static String monthNumber(int month){
+        String m = String.valueOf(month);
+        switch (month){
+            case 0: case 13: case 14: m = "За месяц "+month+" начислено $"; break;
+            case 1: m = "За январь начислено $"; break;
+            case 2: m = "За февраль начислено $"; break;
+            case 3: m = "За март начислено $"; break;
+            case 4: m = "За апрель начислено $"; break;
+            case 5: m = "За май начислено $"; break;
+            case 6: m = "За июнь начислено $"; break;
+            case 7: m = "За июль начислено $"; break;
+            case 8: m = "За август начислено $"; break;
+            case 9: m = "За сентябрь начислено $"; break;
+            case 10: m = "За октябрь начислено $"; break;
+            case 11: m = "За ноябрь начислено $"; break;
+            case 12: m = "За декабрь начислено $"; break;
+        }
+        return m;
+    }
+
+    private static double salarycalc(int month, int salary){
+        double calc = 0;
+        if (month==0 || month == 13 || month == 14){
+            return calc;
+        }else if((month > 0 && month < 6) || (month > 8 && month < 13)){
+            return salary+(salary*0.5);
+        }else return salary;
+    }
 
 }
