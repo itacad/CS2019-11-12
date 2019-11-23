@@ -1,5 +1,7 @@
 package by.it.akalugina.lesson04;
 
+import java.util.Scanner;
+
 /*
 Таблица умножения
 Вывести на экран таблицу умножения size х size используя цикл while.
@@ -25,4 +27,21 @@ size прочитать c клавиатуры. Числа разделить п
  */
 public class TaskB2 {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        int power = 1;
+        String fin;
+        while (power <= size) {
+            fin=" ";
+            int number=1;
+            while (number<=size){
+                int answer=number*power;
+                fin+=(answer+" ");
+                number++;
+            }
+            System.out.println(fin);
+            power++;
+        }
+    }
 }
