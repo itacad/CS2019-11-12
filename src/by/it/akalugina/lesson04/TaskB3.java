@@ -24,8 +24,20 @@ package by.it.akalugina.lesson04;
 
  */
 
-
+import java.util.Scanner;
 
 public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = 0;
+        int c;
+        for (c=1;b+c<=a;c++){
+            b=b+c;
+            String sum=b+",";
+            System.out.print(sum);
 
+
+        }
+    }
 }
