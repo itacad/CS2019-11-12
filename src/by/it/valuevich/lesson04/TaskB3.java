@@ -25,7 +25,18 @@ package by.it.valuevich.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int limit = scanner.nextInt();
+        int i = 1;
+        int sum = 0;
+        for (;;) {
+            sum = sum + i++;
+            if (sum > limit) break;
+            System.out.print(sum + ",");
+        }
+    }
 }

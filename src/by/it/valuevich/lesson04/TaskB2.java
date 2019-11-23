@@ -32,8 +32,8 @@ public class TaskB2 {
 //        int i = 1;
 //        while (i <= size) {
 //            for (; i <= size; i++) {
-//                for (int k = 1; k <= size; k++) {
-//                    System.out.print(k * i + " ");
+//                for (int n = 1; n <= size; k++) {
+//                    System.out.print(n * i + " ");
 //                }
 //                System.out.println("");
 //            }
