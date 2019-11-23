@@ -1,5 +1,8 @@
 package by.it.zenevich.lesson04;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +40,42 @@ package by.it.zenevich.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scanner = new Scanner(System.in);
+        int salary = scanner.nextInt();
+        if (salary < 300 || salary > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        }
+        else {
+            for (int month = 0; month <=14; month++)
+            switch (month){
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 1:
+
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+                case 0:
+                    System.out.println("За месяц 0 начислено $0.0");
+            }
+        }
+
+        }
+    }
 
 
-}
+
