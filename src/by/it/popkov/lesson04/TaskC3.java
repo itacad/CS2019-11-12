@@ -23,8 +23,6 @@ package by.it.popkov.lesson04;
 десять умножить на десять равно сто
 */
 
-import java.util.Scanner;
-
 public class TaskC3 {
     static String numToString(int num){
         String textNum = "";
