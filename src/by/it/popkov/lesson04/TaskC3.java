@@ -94,14 +94,10 @@ public class TaskC3 {
         return textNum;
     }
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int size = scan.nextInt();
-
-        for (int firstMult = 2; firstMult <= size; firstMult++) {
-            for (int secondMult = 2; secondMult <= size; secondMult++) {
+        for (int firstMult = 2; firstMult <= 10; firstMult++) {
+            for (int secondMult = 2; secondMult <= 10; secondMult++) {
                 System.out.println(numToString(firstMult) + " умножить на " + numToString(secondMult) + " равно " + numToString(firstMult * secondMult));
             }
-
         }
     }
 
