@@ -25,7 +25,18 @@ package by.it.zenevich.lesson04;
  */
 
 
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class TaskB3 {
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int sum = 0;
+        int a = 1;
+        while ((sum += a) <= i) {
+            a++;
+            System.out.print(sum + ",");
+        }
+    }
 }
