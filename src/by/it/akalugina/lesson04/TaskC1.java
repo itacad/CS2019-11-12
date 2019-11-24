@@ -36,7 +36,100 @@ package by.it.akalugina.lesson04;
 За месяц 14 начислено $0.0
 
 */
-public class TaskC1 {
 
+import java.util.Scanner;
+
+public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scanner = new Scanner(System.in);
+        int salary = scanner.nextInt();
+        double salar = salary * 1.0;
+        double newsalary = (salar / 2 + salar);
+        double salzero = 0.0;
+        String us = "$";
+        String sal = us + salar;
+        String salnew = us + newsalary;
+        String line = "";
+        if (salary < 300 || salary > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else if (salary != 300)
+            for (int month = 0; month <= 14; month++) {
+                if (month < 1) {
+                    line += "За месяц 0 начислено"+" " + us + salzero + "\n";
+                } else if (month == 1) {
+                    line += "За январь начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 2) {
+                    line += "За февраль начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 3) {
+                    line += "За март начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 4) {
+                    line += "За апрель начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 5) {
+                    line += "За май начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 6) {
+                    line += "За июнь начислено"+" " + sal + "\n";
+                    if (salar == 666.0) {
+                        break;
+                    }
+                } else if (month == 7) {
+                    line += "За июль начислено"+" " + sal + "\n";
+                    if (salar == 666.0) {
+                        break;
+                    }
+                } else if (month == 8) {
+                    line += "За август начислено"+" " + sal + "\n";
+                    if (salar == 666.0) {
+                        break;
+                    }
+                } else if (month == 9) {
+                    line += "За сентябрь начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 10) {
+                    line += "За октябрь начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 11) {
+                    line += "За ноябрь начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 12) {
+                    line += "За декабрь начислено"+" " + salnew + "\n";
+                    if (newsalary == 666.0) {
+                        break;
+                    }
+                } else if (month == 13) {
+                    line += "За месяц 13 начислено"+" " + us + salzero + "\n";
+                } else if (month == 14) {
+                    line += "За месяц 14 начислено"+" " + us + salzero + "\n";
+                }
+
+            }
+        System.out.println(line);
+
+
+    }
 
 }
+
+
+

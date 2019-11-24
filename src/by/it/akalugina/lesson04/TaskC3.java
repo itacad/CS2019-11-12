@@ -22,7 +22,32 @@ package by.it.akalugina.lesson04;
 ...
 десять умножить на десять равно сто
 */
-
+import java.util.Locale;
 public class TaskC3 {
-
+    public static void main(String[] args) {
+        String one = "один";
+        String two = "два";
+        String three = "три";
+        String four = "четыре";
+        String five = "пять";
+        String six = "шесть";
+        String seven = "семь";
+        String eight = "восемь";
+        String nine = "десять";
+        String multiply = "умножить на";
+        String equals = "равно";
+        int power = 1;
+        String fin;
+        while (power <= 10) {
+            fin = " ";
+            int number = 1;
+            while (number <= 10) {
+                int answer = number * power;
+                fin += (answer + " ");
+                number++;
+            }
+            System.out.println(fin);
+            power++;
+        }
+    }
 }
