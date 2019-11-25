@@ -1,6 +1,7 @@
 package by.it.zenevich.lesson04;
 
-import java.util.Scanner;
+import java.time.LocalDate;
+import java.util.*;
 
 /*
 
@@ -30,11 +31,12 @@ import java.util.Scanner;
  */
 public class TaskC2 {
     public static void main(String[] args) {
- //       Scanner scanner = new Scanner(System.in);
-//        int day = scanner.nextInt();
- //       int month = scanner.nextInt();
-
-
+        Scanner scanner = new Scanner(System.in);
+        int day = scanner.nextInt();
+        int month = scanner.nextInt();
+        LocalDate date = LocalDate.of(2018, month, day);
+        int dayOfYear = date.getDayOfYear();
+        System.out.println(dayOfYear);
     }
 
 }
