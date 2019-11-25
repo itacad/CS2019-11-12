@@ -1,5 +1,8 @@
 package by.it.valuevich.lesson04;
 
+import java.util.Calendar;
+import java.util.Scanner;
+
 /*
 
 На входе вводится число и месяц 2018 года.
@@ -27,5 +30,23 @@ package by.it.valuevich.lesson04;
 
  */
 public class TaskC2 {
+    static void printDays (int days, int month) {
+        Calendar c = Calendar.getInstance();
+        c.set(2018, month - 1, days, 0, 0, 1);
+        long current = c.getTimeInMillis();
+        c.set(2018, Calendar.JANUARY, 1, 0, 0, 1);
+        long start = c.getTimeInMillis();
+        long res = ((current-start) / (1000L * 24 * 60 * 60)+1);
+        System.out.println(res);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int d=scanner.nextInt();
+        int m=scanner.nextInt();
+
+        printDays(d, m);
+    }
 
 }

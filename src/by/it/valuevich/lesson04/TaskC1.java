@@ -1,5 +1,12 @@
 package by.it.valuevich.lesson04;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor;
+
+import java.time.Month;
+import java.util.Locale;
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +44,67 @@ package by.it.valuevich.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+
+        Scanner sc = new Scanner(System.in);
+        int dreamSalary = sc.nextInt();
+        if (dreamSalary < 300 || dreamSalary > 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else
+            for (int i = 0; i <= 14; i++) {
+                String str;
+                double salary = dreamSalary * 1.5;
+                switch (i) {
+                    case 1:
+                        str = "январь";
+                        break;
+                    case 2:
+                        str = "февраль";
+                        break;
+                    case 3:
+                        str = "март";
+                        break;
+                    case 4:
+                        str = "апрель";
+                        break;
+                    case 5:
+                        str = "май";
+                        break;
+                    case 6:
+                        str = "июнь";
+                        salary = dreamSalary;
+                        break;
+                    case 7:
+                        str = "июль";
+                        salary = dreamSalary;
+                        break;
+                    case 8:
+                        str = "август";
+                        salary = dreamSalary;
+                        break;
+                    case 9:
+                        str = "сентябрь";
+                        break;
+                    case 10:
+                        str = "октябрь";
+                        break;
+                    case 11:
+                        str = "ноябрь";
+                        break;
+                    case 12:
+                        str = "декабрь";
+                        break;
+                    default:
+                        str = "месяц " + i;
+                        salary = 0;
+                }
+                System.out.println("За " + str + " начислено $" + salary);
+                if (salary == 666d) break;
+            }
+    }
 
 
 }
+
+

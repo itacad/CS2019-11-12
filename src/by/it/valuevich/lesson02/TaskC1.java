@@ -2,6 +2,8 @@ package by.it.valuevich.lesson02;
 
 import java.util.Scanner;
 
+import static com.sun.tools.doclint.Entity.sum;
+
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
 
@@ -15,9 +17,9 @@ Sum = 60
 class TaskC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt(34);
-        int j = sc.nextInt(26);
-        int sum = i+j;
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        int sum = i + j;
         System.out.println("Sum = " + sum);
     }
 
