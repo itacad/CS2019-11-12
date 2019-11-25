@@ -23,21 +23,15 @@ package by.it.zenevich.lesson04;
 десять умножить на десять равно сто
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskC3 {
-    public static class NumberWriter {
-
-        public static final String[] BELOW_TWENTY = {"ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять", "одинадцать", "двенадцадь", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"};
-        public static final String[] TENS = {"сто", "десять", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"};
-
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            int size = scanner.nextInt();
-            int x = 1;
-            while (x <= size) {
+            int x = 2;
+            while (x <= 10) {
                 int y = 2;
-                while (y <= size) {
+                while (y <= 10) {
                     int z = x * y;
                     if (z < 20)
                         System.out.println(BELOW_TWENTY[x] + " умножить на " + BELOW_TWENTY[y] + " равно " + BELOW_TWENTY[z]);
@@ -50,10 +44,12 @@ public class TaskC3 {
                         } else System.out.println(BELOW_TWENTY[x] + " умножить на " + BELOW_TWENTY[y] + " равно " + text);
                     } else
                         System.out.println(BELOW_TWENTY[x] + " умножить на " + BELOW_TWENTY[y] + " равно " + TENS[0]);
+
                     y++;
                 }
                 x++;
             }
         }
-    }
+    public static final String[] BELOW_TWENTY = {"ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять", "одинадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"};
+    public static final String[] TENS = {"сто", "десять", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"};
 }

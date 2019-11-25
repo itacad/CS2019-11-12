@@ -34,9 +34,12 @@ public class TaskC2 {
         Scanner scanner = new Scanner(System.in);
         int day = scanner.nextInt();
         int month = scanner.nextInt();
-        LocalDate date = LocalDate.of(2018, month, day);
-        int dayOfYear = date.getDayOfYear();
-        System.out.println(dayOfYear);
+        if (day > 0 && month > 0) {
+            LocalDate date = LocalDate.of(2018, month, day);
+            int dayOfYear = date.getDayOfYear();
+            System.out.println(dayOfYear);
+        } else
+            System.out.println(0);
     }
 
 }
