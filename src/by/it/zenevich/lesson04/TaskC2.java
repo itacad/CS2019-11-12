@@ -1,5 +1,7 @@
 package by.it.zenevich.lesson04;
 
+import java.util.Scanner;
+
 /*
 
 На входе вводится число и месяц 2018 года.
@@ -27,5 +29,12 @@ package by.it.zenevich.lesson04;
 
  */
 public class TaskC2 {
+    public static void main(String[] args) {
+ //       Scanner scanner = new Scanner(System.in);
+//        int day = scanner.nextInt();
+ //       int month = scanner.nextInt();
+
+
+    }
 
 }
