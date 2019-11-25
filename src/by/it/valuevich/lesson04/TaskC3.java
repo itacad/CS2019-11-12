@@ -25,6 +25,7 @@ package by.it.valuevich.lesson04;
 
 public class TaskC3 {
     static String cypherToString(int cypher) {
+
         String[][] w = {
                 {"", "один ", "два ", "три ", "четыре ", "пять ", "шесть ", "семь ", "восемь ", "девять ",
                         "десять ", "одиннадцать ", "двенадцать ", "тринадцать ", "четырнадцать ", "пятнадцать ",
