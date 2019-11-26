@@ -10,6 +10,20 @@ package by.it.lozouski.lesson05;
 */
 
 
-public class TaskB1 {
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> str = new ArrayList<>();
+        str.add("string1");
+        str.add("string2");
+        str.add("string3");
+        str.add("string4");
+        str.add("string5");
+        System.out.println(str.size());
+        for (String s : str) {
+            System.out.println(s);
+        }
+    }
 }
