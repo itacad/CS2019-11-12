@@ -13,7 +13,6 @@ class TaskC {
             octal = String.format("%8s", octal).replace(" ", "0");
 
             String hex = Integer.toHexString(i);
-            if (hex.length() > 8) hex = hex.substring(hex.length() - 8);
             hex = String.format("%8s", hex).replace(" ", "0");
 
             System.out.printf("%8s %8s %8s %4d \n", binary, octal, hex, i);

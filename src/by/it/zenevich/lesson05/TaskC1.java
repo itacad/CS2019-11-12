@@ -14,12 +14,36 @@ package by.it.zenevich.lesson05;
     потом последний.
 */
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
-
+    public static void main(String[] args) throws Exception {
+        ArrayList<Integer> list = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 20; i++) {
+            Integer s = scanner.nextInt();
+            list.add(s);
+        }
+        for (Integer x : list) System.out.println(list.get(x));
+        
+        ArrayList<Integer> mult3 = new ArrayList<>();
+        ArrayList<Integer> mult2 = new ArrayList<>();
+        ArrayList<Integer> other = new ArrayList<>();
+        for (Integer x : list) {
+            if (x % 3 == 0 && x % 2 == 0) {
+                mult3.get(x);
+                mult2.get(x);
+            } else if (x % 3 == 0) {
+                mult3.get(x);
+            } else if (x % 2 == 0) {
+                mult2.get(x);
+            } else {
+                other.get(x);
+            }
+        }
     }
 
     private static void printList(List<Integer> list) {
