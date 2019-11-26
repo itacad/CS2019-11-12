@@ -1,5 +1,7 @@
 package by.it.givi.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,52 @@ package by.it.givi.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int salary = sc.nextInt();
+        int month = 0;
+        if (300 > salary || salary > 3000) {
+            System.out.print("Мы вам перезвоним!");
+        } else {
+            for (; month <= 14; month++) {
+                System.out.println(MonthNumber(month) + salarycount(month, salary));
+                if (salarycount(month, salary) == 666) {
+                    ;
+                    break;
+                }
+            }
+        }
+    }
+    private static String MonthNumber(int month) {
+        String m = String.valueOf(month);
+        switch (month) {
+            case 0: case 13: case 14: m = "За месяц " + month + " начислено $";break;
+            case 1: m = "За январь месяц начислено $";break;
+            case 2: m = "За февраль месяц начислено $";break;
+            case 3: m = "За март месяц начислено $";break;
+            case 4: m = "За аперль месяц начислено $";break;
+            case 5: m = "За май месяц начислено $";break;
+            case 6: m = "За июнь месяц начислено $";break;
+            case 7: m = "За июль месяц начислено $";break;
+            case 8: m = "За август месяц начислено $";break;
+            case 9: m = "За сентябрь месяц начислено $";break;
+            case 10: m = "За октябрь месяц начислено $";break;
+            case 11: m = "За ноябрь месяц начислено $";break;
+            case 12: m = "За декабрь месяц начислено $";break;
+        }
+        return m;
+    }
 
-
+    private static double salarycount(int month, int zp) {
+        double calc = 0;
+        if (month == 0 || month == 13 || month == 14) {
+            return calc;
+        } else if ((month > 0 && month < 6) || (month > 8 && month < 13)) {
+            return zp + (zp * 0.5);
+        } else return zp;
+    }
 }
+
+
+
