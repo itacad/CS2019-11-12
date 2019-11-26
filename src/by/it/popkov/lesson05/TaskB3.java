@@ -42,12 +42,12 @@ public class TaskB3 {
                 }
             }
         }
-        for (int i = 0; i < m.length; i++) {
-            if (m[i] == first) break;
+        for (int value : m) {
+            if (value == first) break;
             indexFirst++;
         }
-        for (int i = 0; i < m.length; i++) {
-            if (m[i] == last) break;
+        for (int value : m) {
+            if (value == last) break;
             indexLast++;
         }
         System.out.println("Index of first element=" + indexFirst);
