@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson05;
+package by.it.valuevich.lesson05;
 
 /* Задачка на сортировку2
 Задача: Написать программу, которая вводит с клавиатуры 20 чисел

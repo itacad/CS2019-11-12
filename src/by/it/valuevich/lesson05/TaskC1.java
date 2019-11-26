@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson05;
+package by.it.valuevich.lesson05;
 /*
 Три массива
 1.  Введите с клавиатуры 20 чисел, сохраните их в список и

@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson05;
+package by.it.valuevich.lesson05;
 
 import org.junit.Test;
 
