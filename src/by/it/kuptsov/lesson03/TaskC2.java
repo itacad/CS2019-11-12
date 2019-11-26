@@ -21,11 +21,14 @@ package by.it.kuptsov.lesson03;
 */
 public class TaskC2 {
 
-
-
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
-
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
+    public static int sumDigitsInNumber(int number) {
+        String s = new Integer(number).toString();
+        char [] arr = s.toCharArray();
+        int result = Character.getNumericValue(arr[0]) + Character.getNumericValue(arr[1]) + Character.getNumericValue(arr[2]) + Character.getNumericValue(arr[3]);
+        return result;
+    }
 }
+
