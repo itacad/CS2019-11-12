@@ -14,7 +14,6 @@ package by.it.givi.lesson05;
 */
 
 import java.util.Scanner;
-
 public class TaskA3 {
     public static void main(String[] args) {
         int[] array = new int[10];
@@ -24,9 +23,9 @@ public class TaskA3 {
         }
         int min=array[0];
         int max=array[0];
-        for (int element : array) {
-            if (element < min) min = element;
-            if (element > max) max = element;
+        for (int i = 1; i < array.length-1; i++){
+            if (array[i] < min) min = array[i];
+            if (array[i] > max) max = array[i];
         }
         System.out.println(min + " " + max);
     }
