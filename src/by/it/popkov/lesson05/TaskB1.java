@@ -10,6 +10,21 @@ package by.it.popkov.lesson05;
 */
 
 
+import java.util.ArrayList;
+
+
 public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> text = new ArrayList<>();
+        text.add("One");
+        text.add("Two");
+        text.add("Three");
+        text.add("Four");
+        text.add("Five");
+        System.out.println(text.size());
+        for (String s : text) {
+            System.out.println(s);
+        }
+    }
 
 }
