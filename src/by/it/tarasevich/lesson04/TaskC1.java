@@ -40,24 +40,23 @@ import java.util.Scanner;
 */
 public class TaskC1 {
     public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+
         Scanner scanner = new Scanner(System.in);
         double a = scanner.nextDouble();
         double b = a + a * 0.5;
-        System.out.println("Какую вы хотите зарплату в $$$?");
+
         if (a < 300 || a > 3000) {
             System.out.println("Мы вам перезвоним!");
-        }
-        else  {
-            System.out.println(a);
-
+        } else
             for (int month = 0; month <= 14; month++) {
                 if (month == 0) {
                     System.out.println("За месяц 0 начислено $0.0");
                 }
-
                 if (month == 1) {
                     System.out.println("За январь начислено $" + b);
                 }
+
                 if (month == 2) {
                     System.out.println("За февраль начислено $" + b);
                 }
@@ -68,7 +67,7 @@ public class TaskC1 {
                     System.out.println("За апрель начислено $" + b);
                 }
                 if (month == 5) {
-                    System.out.println("За май нначислено $" + b);
+                    System.out.println("За май начислено $" + b);
                 }
                 if (month == 6) {
                     System.out.println("За июнь начислено $" + a);
@@ -101,8 +100,7 @@ public class TaskC1 {
                     break;
                 }
 
-            }
 
-        }
+            }
     }
 }

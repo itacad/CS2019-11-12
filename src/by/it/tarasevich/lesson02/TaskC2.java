@@ -21,33 +21,19 @@ class TaskC2 {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int i = scanner.nextInt();
+        int sum = a + i;
 
+        String sum2 = Integer.toBinaryString(a) + Integer.toBinaryString(i);
+
+        String sum3 = Integer.toHexString(a) + Integer.toHexString(i);
+
+        String sum4 = Integer.toOctalString(a) + Integer.toOctalString(i);
+
+
+        System.out.println("DEC:" + a + "+" + i + "=" + sum);
+        System.out.println("BIN:" + Integer.toBinaryString(a) + "+" + Integer.toBinaryString(i) + "=" + sum2);
+        System.out.println("HEX:" + Integer.toHexString(a) + "+" + Integer.toHexString(i) + "=" + sum3);
+        System.out.println("OCT:" + Integer.toOctalString(a) + "+" + Integer.toOctalString(i) + "=" + sum4);
+    }
     }
 
-    /* Нужно написать программу, которая вводит два числа с клавиатуры
-        и выводит их сумму на экран в виде
-
-        Ввод (это вы вводите с клавиатуры):
-        34 26
-
-        Вывод (это должна появится в консоли, обратите внимание на пробелы и слово Sum:
-        Sum = 60
-
-        */
-    static class TaskC1 {
-
-
-
-        public static void main(String[] args) {
-
-            Scanner scanner = new Scanner(System.in);
-            int a = scanner.nextInt();
-            int i = scanner.nextInt();
-            int sum = a + i;
-
-            System.out.println("Sum = " + sum);
-
-
-        }
-    }
-}

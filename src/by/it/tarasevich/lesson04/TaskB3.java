@@ -33,13 +33,13 @@ public class TaskB3 {
         int a = scanner.nextInt();
         int sum = 0;
         int b = 1;
-        while (sum < a) {
+        while (sum <= a) {
             sum = sum + b;
-            System.out.print(sum + ",");
-            b++;
-            if (sum >= a) {
+            if (sum > a) {
                 break;
             }
+            System.out.print(sum + ",");
+            b++;
         }
 
     }
