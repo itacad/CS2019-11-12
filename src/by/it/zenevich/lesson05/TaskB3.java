@@ -20,6 +20,40 @@ Index of last element=1
 
 */
 
-public class TaskB3 {
+import java.util.Arrays;
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        int[] m = new int[10];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < m.length; i++) {
+            m[i] = scanner.nextInt();
+        }
+        int a = m[0];
+        int b = m[m.length - 1];
+        bubbleSort(m);
+        int index_a = 0;
+        int index_b = 0;
+        for (int i = 0; i < m.length; i++) {
+            if (a == m[i]) index_a = i;
+            if (b == m[i]) index_b = i;
+        }
+
+        System.out.println("Index of first element=" + index_a);
+        System.out.println("Index of last element=" + index_b);
+
+    }
+
+    private static void bubbleSort(int[] m) {
+        for (int i = m.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (m[j] > m[j + 1]) {
+                    int x = m[j];
+                    m[j] = m[j + 1];
+                    m[j + 1] = x;
+                }
+            }
+        }
+    }
 }

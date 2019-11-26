@@ -25,17 +25,16 @@ END
 */
 public class TaskA2 {
     public static void main(String[] args) {
-        ArrayList<String> words=new ArrayList<>();
+        ArrayList<String> words = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        for (;;){
+        for (; ; ) {
             String word = scanner.next();
             if (word.equals("END")) {
                 break;
             }
- //           word.add(word);
+            words.add(word);
         }
         System.out.println(words);
     }
-
 }
