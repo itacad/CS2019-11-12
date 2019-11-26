@@ -14,11 +14,45 @@ package by.it.akalugina.lesson05;
     потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
     public static void main(String[] args) throws Exception
     {
+        ArrayList<Integer>list=new ArrayList<>();
+        ArrayList<Integer>first=new ArrayList<>();
+        ArrayList<Integer>second=new ArrayList<>();
+        ArrayList<Integer>third=new ArrayList<>();
+
+        Scanner scanner = new Scanner(System.in);
+        for(int i=0;i<20;i++){
+            list.add(i, scanner.nextInt());
+            if(list.get(i)%3==0){
+                first.add(list.get(i));
+
+            }
+            if(list.get(i)%2==0) {
+                second.add(list.get(i));
+            }
+            if(list.get(i)%2!=0&&list.get(i)%3!=0){
+                third.add(list.get(i));
+            }
+        }
+
+        for(int i=0;i<first.size();i++){
+            int j=first.get(i);
+            System.out.println(j);
+        }
+        for(int i=0;i<second.size();i++){
+            int j=second.get(i);
+            System.out.println(j);
+        }
+        for(int i=0;i<third.size();i++) {
+            int j = third.get(i);
+            System.out.println(j);
+        }
 
     }
 
