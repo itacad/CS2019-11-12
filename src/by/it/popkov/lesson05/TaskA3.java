@@ -13,6 +13,22 @@ package by.it.popkov.lesson05;
 0 9
 */
 
+import java.util.Scanner;
+
 public class TaskA3 {
+    public static void main(String[] args) {
+        int[] array = new int[10];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
+        int min = array[0];
+        int max = array[0];
+        for (int i : array) {
+            if (i < min) min = i;
+            if (i > max) max = i;
+        }
+        System.out.println(min + " " + max);
+    }
 
 }
