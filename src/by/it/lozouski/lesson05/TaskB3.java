@@ -47,7 +47,7 @@ public class TaskB3 {
                 }
             }
         }
-        
+
         for (int i = 0; i < mas.length; i++) {
             if (mas[i] == firstElement) firstElement = i;
             if (mas[i] == lastElement) lastElement = i;
