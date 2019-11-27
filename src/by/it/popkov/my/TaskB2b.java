@@ -1,4 +1,4 @@
-package by.it.popkov.lesson05;
+package by.it.popkov.my;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package by.it.popkov.lesson03;
+package by.it.popkov.my;
 
 import java.util.Arrays;
 
