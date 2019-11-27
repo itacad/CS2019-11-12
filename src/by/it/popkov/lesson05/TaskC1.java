@@ -14,12 +14,35 @@ package by.it.popkov.lesson05;
     потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> big = new ArrayList<>();
+        ArrayList<Integer> x3 = new ArrayList<>();
+        ArrayList<Integer> x2 = new ArrayList<>();
+        ArrayList<Integer> other = new ArrayList<>();
 
+        for (int i = 0; i < 20; i++) {
+            big.add(scanner.nextInt());
+        }
+        for (Integer integer : big) {
+            if (integer % 2 == 0) {
+                x2.add(integer);
+            }
+            if (integer % 3 == 0) {
+                x3.add(integer);
+            }
+            if (integer % 2 != 0 && integer % 3 != 0) {
+                other.add(integer);
+            }
+        }
+        printList(x3);
+        printList(x2);
+        printList(other);
     }
 
     private static void printList(List<Integer> list) {
