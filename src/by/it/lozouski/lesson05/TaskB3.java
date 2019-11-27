@@ -32,15 +32,15 @@ public class TaskB3 {
             mas[i] = sc1.nextInt();
         }
         int temp;
-        boolean Sorted = false;
+        boolean sorted = false;
         int firstElement = mas[0];
         int lastElement = mas[9];
 
-        while (!Sorted) {
-            Sorted = true;
+        while (!sorted) {
+            sorted = true;
             for (int i = 0; i < mas.length - 1; i++) {
                 if (mas[i] > mas[i + 1]) {
-                    Sorted = false;
+                    sorted = false;
                     temp = mas[i];
                     mas[i] = mas[i + 1];
                     mas[i + 1] = temp;
