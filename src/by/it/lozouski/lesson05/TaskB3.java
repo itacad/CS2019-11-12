@@ -14,12 +14,45 @@ Index of last element=???
 Например, для такого ввода
 123 99 88 77 66 5 4 3 0 2
 
+0 2 3 4 5 66 77 88 99 123
+
 ожидается такой вывод:
 Index of first element=9
 Index of last element=1
 
 */
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        int[] mas = new int[10];
+        for (int i = 0; i < mas.length; i++) {
+            mas[i] = sc1.nextInt();
+        }
+        int temp;
+        boolean Sorted = false;
+        int firstElement = mas[0];
+        int lastElement = mas[9];
+
+        while (!Sorted) {
+            Sorted = true;
+            for (int i = 0; i < mas.length - 1; i++) {
+                if (mas[i] > mas[i + 1]) {
+                    Sorted = false;
+                    temp = mas[i];
+                    mas[i] = mas[i + 1];
+                    mas[i + 1] = temp;
+                }
+            }
+        }
+        
+        for (int i = 0; i < mas.length; i++) {
+            if (mas[i] == firstElement) firstElement = i;
+            if (mas[i] == lastElement) lastElement = i;
+        }
+        System.out.println("Index of first element=" + firstElement);
+        System.out.println("Index of last element=" + lastElement);
+    }
 }
