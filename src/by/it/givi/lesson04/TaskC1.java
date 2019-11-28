@@ -50,7 +50,6 @@ public class TaskC1 {
             for (; month <= 14; month++) {
                 System.out.println(MonthNumber(month) + salarycount(month, salary));
                 if (salarycount(month, salary) == 666) {
-                    ;
                     break;
                 }
             }
@@ -59,7 +58,7 @@ public class TaskC1 {
     private static String MonthNumber(int month) {
         String m = String.valueOf(month);
         switch (month) {
-            case 0: case 13: case 14: m = "За месяц " + month + " начислено $";break;
+            case 0: case 13: case 14: m = "За месяц "+month+" начислено $";break;
             case 1: m = "За январь месяц начислено $";break;
             case 2: m = "За февраль месяц начислено $";break;
             case 3: m = "За март месяц начислено $";break;
