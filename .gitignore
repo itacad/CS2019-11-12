@@ -19,4 +19,6 @@
 *.zip
 *.tar.gz
 *.rar
+public/uploads/
+public/vendor/
 
