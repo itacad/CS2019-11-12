@@ -20,9 +20,6 @@ public class TaskC3 {
         }
         int[] result = sort(list);
 
-
-
-
         for (int j = 0; j < result.length - 1; j++)
         {
             for (int k = j + 1; k < result.length; k++)
@@ -36,15 +33,10 @@ public class TaskC3 {
             }
         }
 
-
-
-
         for(int i=0;i<result.length;i++){
         System.out.println(result[i]);
         }
-
     }
-
     public static int[] sort(int[] list) {
         int[] buffer1 = Arrays.copyOf(list, list.length);
         int[] buffer2 = new int[list.length];
@@ -56,13 +48,10 @@ public class TaskC3 {
         if (startIndex >= endIndex - 1) {
             return buffer1;
         }
-
-        // уже отсортирован.
         int middle = startIndex + (endIndex - startIndex) / 2;
         int[] sorted1 = mergesortInner(buffer1, buffer2, startIndex, middle);
         int[] sorted2 = mergesortInner(buffer1, buffer2, middle, endIndex);
 
-        // Слияние
         int index1 = startIndex;
         int index2 = middle;
         int destIndex = startIndex;
@@ -81,4 +70,3 @@ public class TaskC3 {
     }
     }
 
-//Arrays.sort(result, Collections.reverseOrder());
