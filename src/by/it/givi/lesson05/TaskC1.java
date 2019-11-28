@@ -27,17 +27,18 @@ public class TaskC1 {
         ArrayList<Integer> l3 = new ArrayList<Integer>();
         ArrayList<Integer> trash = new ArrayList<Integer>();
         for (int i = 0; i < 20; i++) {
-            main.add((scan.nextInt()));
+            main.add(scan.nextInt());
         }
         for (Integer a : main) {
-            if (a % 2 == 0 & a != 0) {
-                l2.add(a); }
-            if (a % 3 == 0 & a != 0) {
-                l3.add(a); }
-            //if (a % 3 == 0 & a % 2 == 0 & a!=0) {
-            //    l2.add(a); l3.add(a);}
+            if (a % 2 == 0 /*& a != 0*/) {
+                l2.add(a);
+            }
+            if (a % 3 == 0 /*& a != 0*/) {
+                l3.add(a);
+            }
             if (a % 2 != 0 && a % 3 != 0) {
-                trash.add(a); }
+                trash.add(a);
+            }
         }
         printList(l3);
         printList(l2);
@@ -46,7 +47,6 @@ public class TaskC1 {
 
     private static void printList(List<Integer> list) {
         for (Integer aList : list) System.out.println(aList);
-        for (Integer s : list) System.out.println(s);
     }
 }
 
