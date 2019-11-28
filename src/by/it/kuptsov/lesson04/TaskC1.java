@@ -50,10 +50,10 @@ public class TaskC1 {
             System.exit(0);
         }
         for (int i = 0; i <= 14; ++i) {
-            if (i == 0 || i == 13 || i == 14)
+//            if (i == 0 || i == 13 || i == 14)
                 System.out.println("За месяц "+ i +" начислено $"+ 0*x);
-            else
-                if (i != 6 || i != 7 || i !=8)
+//            else
+//                if (i != 6 || i != 7 || i !=8)
             System.out.println("За месяц "+ i +" начислено $"+ x);
 
 

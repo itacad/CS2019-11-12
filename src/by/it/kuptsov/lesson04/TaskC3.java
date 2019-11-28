@@ -22,7 +22,3 @@ package by.it.kuptsov.lesson04;
 ...
 десять умножить на десять равно сто
 */
-
-public class TaskC3 {
-
-}
