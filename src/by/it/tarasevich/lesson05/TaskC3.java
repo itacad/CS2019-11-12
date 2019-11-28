@@ -11,26 +11,16 @@ import java.util.Scanner;
 
 public class TaskC3 {
     public static void main(String[] args) {
-        int[] m = new int[20];
+        Integer [] m = new Integer[20];
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < m.length; i++) {
             m[i] = scanner.nextInt();
         }
         sort(m);
     }
-
-
-    public static void sort(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            for (int j = 0; j < i; j++) {
-                if (array[j] < array[j + 1]) {
-                    int a = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = a;
-                }
-            }
-        }
+    public static void sort(Integer[] array) {
+        Arrays.sort(array, Collections.reverseOrder());
         System.out.println(Arrays.toString(array));
+
     }
 }
-
