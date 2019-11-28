@@ -25,5 +25,16 @@ package by.it.givi.lesson06;
 
 */
 public class TaskA2 {
+    public static void main(String[] args) {
+        Dog psi = new Dog();
+        psi.setName("Шарик");
+        psi.setAge(5);
 
+        Dog pes = new Dog();
+        pes.setName("Тузик");
+        pes.setAge(3);
+
+        System.out.println(psi);
+        System.out.println(pes);
+    }
 }
