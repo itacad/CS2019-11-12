@@ -59,18 +59,18 @@ public class TaskC1 {
         String m = String.valueOf(month);
         switch (month) {
             case 0: case 13: case 14: m = "За месяц "+month+" начислено $";break;
-            case 1: m = "За январь месяц начислено $";break;
-            case 2: m = "За февраль месяц начислено $";break;
-            case 3: m = "За март месяц начислено $";break;
-            case 4: m = "За апрель месяц начислено $";break;
-            case 5: m = "За май месяц начислено $";break;
-            case 6: m = "За июнь месяц начислено $";break;
-            case 7: m = "За июль месяц начислено $";break;
-            case 8: m = "За август месяц начислено $";break;
-            case 9: m = "За сентябрь месяц начислено $";break;
-            case 10: m = "За октябрь месяц начислено $";break;
-            case 11: m = "За ноябрь месяц начислено $";break;
-            case 12: m = "За декабрь месяц начислено $";break;
+            case 1: m = "За январь начислено $";break;
+            case 2: m = "За февраль начислено $";break;
+            case 3: m = "За март начислено $";break;
+            case 4: m = "За апрель начислено $";break;
+            case 5: m = "За май начислено $";break;
+            case 6: m = "За июнь начислено $";break;
+            case 7: m = "За июль начислено $";break;
+            case 8: m = "За август начислено $";break;
+            case 9: m = "За сентябрь начислено $";break;
+            case 10: m = "За октябрь начислено $";break;
+            case 11: m = "За ноябрь начислено $";break;
+            case 12: m = "За декабрь начислено $";break;
         }
         return m;
     }
