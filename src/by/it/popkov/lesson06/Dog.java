@@ -1,6 +1,6 @@
 package by.it.popkov.lesson06;
 
-class Dog{
+class Dog {
     private String name;
     private int age;
     private int weight;
@@ -55,10 +55,10 @@ class Dog{
 
     @Override
     public String toString() {
-        return "Кличка: "+ name +". Возраст: " + age;
+        return "Кличка: " + name + ". Возраст: " + age;
     }
 
-    boolean win(Dog otherDog){
+    boolean win(Dog otherDog) {
         double chanceThisDog = 0.2 * this.age + 0.3 * this.weight + 0.5 * this.power;
         double chanceOtherDog = 0.2 * otherDog.age + 0.3 * otherDog.weight + 0.5 * otherDog.power;
         return chanceThisDog > chanceOtherDog;

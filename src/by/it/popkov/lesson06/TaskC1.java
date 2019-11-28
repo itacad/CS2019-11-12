@@ -35,8 +35,16 @@ import java.util.Scanner;
 public class TaskC1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        //Доступны оба формата ввода данных, так как есть и конструктор с агрументами так и сеттеры
         Dog first = new Dog(scanner.next(), scanner.nextInt(), scanner.nextInt(), scanner.nextDouble());
-        Dog second = new Dog(scanner.next(), scanner.nextInt(), scanner.nextInt(), scanner.nextDouble());
+
+        Dog second = new Dog();
+        second.setName(scanner.next());
+        second.setAge(scanner.nextInt());
+        second.setWeight(scanner.nextInt());
+        second.setPower(scanner.nextDouble());
+
         if ((first.win(second))) {
             System.out.println(first.getName());
         } else {
