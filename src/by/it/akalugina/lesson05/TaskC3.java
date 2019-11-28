@@ -19,7 +19,7 @@ public class TaskC3 {
             list[i] = scanner.nextInt();
         }
         int[] result = sort(list);
-        
+
         Integer[] resultint = new Integer[result.length];
 
         for (int i = 0; i < result.length; i++) {
