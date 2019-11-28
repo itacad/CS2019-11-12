@@ -19,22 +19,16 @@ public class TaskC3 {
             list[i] = scanner.nextInt();
         }
         int[] result = sort(list);
+        
+        Integer[] resultint = new Integer[result.length];
 
-        for (int j = 0; j < result.length - 1; j++)
-        {
-            for (int k = j + 1; k < result.length; k++)
-            {
-                if (result[j] < result[k])
-                {
-                    int temp = result[k];
-                    result[k] = result[j];
-                    result[j] = temp;
-                }
-            }
+        for (int i = 0; i < result.length; i++) {
+            resultint[i] = result[i];
         }
+        Arrays.sort(resultint, Collections.reverseOrder());
 
-        for(int i=0;i<result.length;i++){
-        System.out.println(result[i]);
+        for(int i=0;i<resultint.length;i++){
+            System.out.println(resultint[i]);
         }
     }
     public static int[] sort(int[] list) {
@@ -68,5 +62,4 @@ public class TaskC3 {
         }
         return result;
     }
-    }
-
+}
