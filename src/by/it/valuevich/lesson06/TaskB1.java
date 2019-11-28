@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson06;
+package by.it.valuevich.lesson06;
 
 /*
 
@@ -26,6 +26,19 @@ double averageAge(Dog[] dogs){.....}; //должен вычислять сред
 */
 
 public class TaskB1 {
+    public static void main(String[] args) {
+        Dog [] dogs = {
+                new Dog("Шарик", 1),
+                new Dog("Жучка", 2),
+                new Dog("Бобик", 3),
+                new Dog("Барбос", 4),
+                new Dog("Полкан", 5),
+        };
+
+        DogHelper.printAllNames(dogs);
+        double averageAge = DogHelper.averageAge(dogs);
+        System.out.println(averageAge);
+    }
 
 
 }

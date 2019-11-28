@@ -14,17 +14,57 @@ package by.it.valuevich.lesson05;
     потом последний.
 */
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
-
-    }
-
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
-    }
-
-
-}
+//public class TaskC1 {
+//    public static void main(String[] args) throws Exception {
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in) );
+//        ArrayList<Integer> list = new ArrayList<Integer>(20);
+//
+//        ArrayList<Integer> list1 = new ArrayList<Integer>();
+//        ArrayList<Integer> list2 = new ArrayList<Integer>();
+//        ArrayList<Integer> list3 = new ArrayList<Integer>();
+//
+//        while (true)
+//        {
+//            String s = reader.readLine();
+//            if (s.isEmpty()) break;
+//            int z = Integer.parseInt(s);
+//            list.add(z);
+//        }
+//
+//        for (int i = 0; i < list.size(); i++){
+//
+//            int x = list.get(i);
+//
+//            if (x % 3 == 0){
+//                list1.add(x);
+//            } else if (x % 2 == 0){
+//                list2.add(x);
+//            } else {
+//                list3.add(x);
+//            }
+//        }
+//    }
+//
+//    public static void printList(List<Integer> list, int[] list1, int[] list2, int[] list3) {
+//
+//        for (int i = 0; i < list1.length; i++){
+//            System.out.println(list1.get(i));
+//        }
+//
+//        for (int j = 0; j < list2.length; j++){
+//            System.out.println(list2.get(j));
+//        }
+//
+//        for (int h = 0; h < list3.length; h++){
+//            System.out.println(list3.get(h));
+//        }
+//
+//    }
+//}
+//

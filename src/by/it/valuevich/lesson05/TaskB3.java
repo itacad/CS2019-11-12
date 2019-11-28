@@ -20,6 +20,27 @@ Index of last element=1
 
 */
 
-public class TaskB3 {
-
-}
+import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.Scanner;
+//public class TaskB3 {
+//
+//    public static void main(String[] args) {
+//        int[] m = new int[10];
+//        Scanner sc = new Scanner(System.in);
+//        for (int i = 0; i < m.length; i++) {
+//            m[i] = sc.nextInt();
+//        }
+//
+//            Arrays.sort(m);
+//
+//            int first = m.get(0);
+//            int last = m.get(m.length - 1);
+//
+//        System.out.println("Index of first element="+first);
+//        System.out.println("Index of last element="+last);
+//
+//    }
+//
+//}
+//

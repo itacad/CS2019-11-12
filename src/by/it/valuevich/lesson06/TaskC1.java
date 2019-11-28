@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson06;
+package by.it.valuevich.lesson06;
 
 /*
 Доработайте класс Dog.
