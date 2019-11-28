@@ -30,6 +30,17 @@ package by.it.givi.lesson06;
 
 
 public class TaskA1 {
+    public static void main(String[] args) {
+        Dog psina = new Dog();
+        psina.setName("Валера");
+        psina.setAge(7);
+
+        Dog pes = new Dog();
+        pes.setName("Толя");
+        pes.setAge(6);
+        System.out.println(psina.getName()+" "+psina.getAge());
+        System.out.println(pes.getName()+" "+pes.getAge());
+    }
 
 
 }
