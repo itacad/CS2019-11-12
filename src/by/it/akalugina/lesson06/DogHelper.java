@@ -3,7 +3,7 @@ package by.it.akalugina.lesson06;
 public class DogHelper {
    static void printAllNames(Dog[] dogs){
        for (Dog dog : dogs) {
-           System.out.println(dog.getName()+" ");
+           System.out.print(dog.getName()+" ");
        }
        System.out.println();
    }
