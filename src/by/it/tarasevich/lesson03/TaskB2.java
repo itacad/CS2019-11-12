@@ -1,4 +1,6 @@
-package by.it._tasks_.lesson03;
+package by.it.tarasevich.lesson03;
+
+import java.util.Scanner;
 
 /*
 Lesson 03. Task B2. Нужно написать программу, которая вводит три числа  a b c типа int с клавиатуры
@@ -29,5 +31,38 @@ Lesson 03. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
+class TaskB2 {
 
+    static double dis(int a, int b, int c) {
+        return b * b - 4 * a * c;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        double D = dis(a, b, c);
+
+        if (D > 0) {
+            double x1, x2;
+            x1 = (-b - Math.sqrt(D)) / (2 * a);
+            x2 = (-b + Math.sqrt(D)) / (2 * a);
+            System.out.println(x1 + " " + x2);
+        }
+        else if (D == 0) {
+            double x;
+            x = -b / (2 * a);
+            System.out.println(x);
+        }
+        else {
+            System.out.println("Отрицательный дискриминант");
+        }
+
+
+    }
+
+}
 
