@@ -2,8 +2,6 @@ package by.it.valuevich.lesson02;
 
 import java.util.Scanner;
 
-import static com.sun.tools.doclint.Entity.sum;
-
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
 

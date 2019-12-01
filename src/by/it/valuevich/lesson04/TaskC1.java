@@ -1,10 +1,5 @@
 package by.it.valuevich.lesson04;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor;
-
-import java.time.Month;
-import java.util.Locale;
 import java.util.Scanner;
 
 /*
