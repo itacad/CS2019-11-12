@@ -8,7 +8,7 @@ public class DogHelper {
         System.out.println();
     }
 
-    double averageAge(Dog[] dogs) {
+   static double averageAge(Dog[] dogs) {
         double sum = 0;
         for (Dog dog : dogs) {
             sum += dog.getAge();
