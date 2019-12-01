@@ -20,6 +20,40 @@ Index of last element=1
 
 */
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class TaskB3 {
 
+  public static void main(String[] args) {
+    int[] m = new int[10];
+    Scanner sc = new Scanner(System.in);
+    int first;
+    int last;
+    for (int i = 0; i < 10; i++) {
+      m[i] = sc.nextInt();
+    }
+    first = m[0];
+    last = m[9];
+    int a, b, c;
+    int size = 10;
+    for (a = 1; a < size; a++) {
+      for (b = size - 1; b >= a; b--) {
+        if (m[b - 1] > m[b]) {
+          c = m[b - 1];
+          m[b - 1] = m[b];
+          m[b] = c;
+        }
+      }
+    }
+    for (int i = 0; i < 10; i++) {
+      if (m[i] == first) {
+        System.out.println("Index of first element=" + i);
+      }
+      if (m[i] == last) {
+        System.out.println("Index of last element=" + i);
+      }
+    }
+  }
 }

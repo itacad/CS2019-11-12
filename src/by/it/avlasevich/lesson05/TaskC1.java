@@ -14,17 +14,41 @@ package by.it.avlasevich.lesson05;
     потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
 
+  public static void main(String[] args) throws Exception {
+    ArrayList<Integer> m = new ArrayList<>(20);
+    Scanner sc = new Scanner(System.in);
+    ArrayList<Integer> a = new ArrayList<>();
+    ArrayList<Integer> b = new ArrayList<>();
+    ArrayList<Integer> c = new ArrayList<>();
+    for (int i = 0; i < 20; i++) {
+      m.add(sc.nextInt());
     }
-
-    private static void printList(List<Integer> list) {
-        for (Integer aList : list) System.out.println(aList);
+    for (Integer q : m){
+      if (q % 3 == 0) {
+        a.add(q);
+      }
+      if (q % 2 == 0) {
+        b.add(q);
+      }
+      if ((q % 2 != 0) & (q % 3 != 0)){
+        c.add(q);
+      }
     }
+    printList(a);
+    printList(b);
+    printList(c);
 
-
+  }
+  private static void printList(List<Integer> list) {
+    for (Integer q : list) {
+      System.out.println(q);
+    }
+  }
 }
+

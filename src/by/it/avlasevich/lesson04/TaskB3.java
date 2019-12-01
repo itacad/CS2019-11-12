@@ -32,15 +32,12 @@ public class TaskB3 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int number = sc.nextInt();
-    int i = 2;
+    int i = 1;
     int sum = 1;
-    do {
+    while (sum <= number){
       System.out.print(sum + ",");
-      sum = 1;
-      for (int k = 2; k <= i; k++) {
-        sum = sum + k;
-      }
       i++;
-    } while (sum < number);
+      sum = sum + i;
+    }
   }
 }

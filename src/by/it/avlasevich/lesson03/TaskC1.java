@@ -29,12 +29,12 @@ import java.util.Scanner;
 class TaskC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int celsium = sc.nextInt();
-        System.out.println(convertCelsiumToFahrenheit(celsium));
+        int TC = sc.nextInt();
+        System.out.println(convertCelsiumToFahrenheit(TC));
     }
 
-    public static double convertCelsiumToFahrenheit(int gh) {
-        return (9.0 * gh) / 5 + 32;
+    public static double convertCelsiumToFahrenheit(int TF) {
+        return (9.0 * TF) / 5 + 32;
 
     }
 
